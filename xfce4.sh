@@ -45,7 +45,7 @@ while true;do
         esac
 done
 
-mv .bashrc /home/"$USERNAME"/
+mv .bashrc .bashrc.bak ~/"$USERNAME"
 
 
 
