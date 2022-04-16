@@ -63,7 +63,7 @@ xargs apt remove -y <xremove.txt
 
 apt update 
 
-dpkg --add-archotecture i386
+dpkg --add-architecture i386
 
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
 
