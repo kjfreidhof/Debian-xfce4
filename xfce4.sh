@@ -45,8 +45,10 @@ while true;do
         esac
 done
 
-mv .bashrc .bashrc.bak ~/"$USERNAME"
 
+mv .bashrc bashrc.bak 
+
+cp .bashrc.bak /home/"$USERNAME"
 
 
 apt update
@@ -58,6 +60,21 @@ mv sources.list /etc/apt
 cat xremove.txt
 
 xargs apt remove -y <xremove.txt
+
+apt update 
+
+dpkg --add-archotecture i386
+
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+
+mv winehq.key /usr/share/keyrings/winehq-archive.key
+
+wget -nc https://dl.winehq.org/wine-builds/debian/dists/bullseye/winehq-bullseye.sources
+mv winehq-bullseye.sources /etc/apt/sources.list.d/
+
+apt update 
+
+xargs apt install -y <wine.txt
 
 exit
 
