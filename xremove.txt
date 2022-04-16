@@ -1,0 +1,19 @@
+applications to remove in debian 
+
+xterm 
+
+xfce4-terminal 
+
+libreoffice* 
+
+xfburn 
+
+mousepad
+
+parole 
+
+xfce4-taskmanager
+
+exfalso 
+
+
