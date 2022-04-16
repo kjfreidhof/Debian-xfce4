@@ -47,7 +47,7 @@ done
 
 apt update
 
-xargs apt install <pkg.txt
+xargs apt install -y <pkg.txt
 
 mv sources.list /etc/apt
 
