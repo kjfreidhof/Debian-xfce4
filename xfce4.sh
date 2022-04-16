@@ -59,7 +59,7 @@ apt-key add winehq.key
 
 apt update
 
-apt install $(cat /home/"$USERNAME"/Downloads/Debian-xfce4/wine.txt) 
+xargs install -y <wine.txt 
 
 
 cat /home/"$USERNAME"/Downloads/debian/xremove.txt
@@ -71,7 +71,7 @@ case $yn in
         *)printf "please answer yes or no"
         esac
 
-apt remove ($cat /home/"$USERNAME"/Downloads/Debian-xfce4/xremove.txt)
+apt remove -y <xremove.txt
 
 exit
 
