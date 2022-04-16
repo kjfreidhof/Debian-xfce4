@@ -53,7 +53,7 @@ mv sources.list /etc/apt
 
 cat xremove.txt
 
-apt remove -y <xremove.txt
+xargs apt remove -y <xremove.txt
 
 exit
 
