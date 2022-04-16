@@ -23,6 +23,8 @@ fi
 
 
 
+
+
 printf "run this scritp at your own risk\n"
 
 printf "I am not responsible for what happens to your system\n"
