@@ -1,3 +1,6 @@
---install-recommends winehq-stable
+--install-recommends winehq-devel
+
+
+
 
 
