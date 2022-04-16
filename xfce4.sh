@@ -39,8 +39,8 @@ printf "when you install this script\n"
 while true;do
         read -p "Do you want to run this script? " yn
         case $yn in 
-                [ 'Yy' ]*)make install; break;;
-                [ 'Nn' ]*)exit;;
+                [Yy]*)make install; break;;
+                [Nn]*)exit;;
                 *)printf "please answer yes or no.";;
         esac
 done
