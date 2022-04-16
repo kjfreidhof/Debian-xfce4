@@ -1,4 +1,4 @@
-applications to remove in debian 
+
 
 xterm 
 
