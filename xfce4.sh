@@ -47,7 +47,7 @@ done
 
 apt update
 
-apt install $(cat /home/"$USERNAME"/Downloads/Debian-xfce4/pkg.txt)
+xargs apt install <pkg.txt
 
 mv sources.list /etc/apt
 
