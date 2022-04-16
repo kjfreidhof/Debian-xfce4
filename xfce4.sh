@@ -59,7 +59,7 @@ apt-key add winehq.key
 
 apt update
 
-xargs install -y <wine.txt 
+xargs apt install -y <wine.txt 
 
 
 cat /home/"$USERNAME"/Downloads/debian/xremove.txt
