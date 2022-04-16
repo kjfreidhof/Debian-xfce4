@@ -49,27 +49,9 @@ apt update
 
 xargs apt install -y <pkg.txt
 
-mv sources.list /etc/apt
+mv sources.list /etc/apt 
 
-dpkg --add-architecture i386
-
-wget -nc https://dl.winehq.org/wine-builds/winehq.key
-
-apt-key add winehq.key
-
-apt update
-
-xargs apt install -y <wine.txt 
-
-
-cat /home/"$USERNAME"/Downloads/debian/xremove.txt
-
-read -p "Do you want to remove the following packages above? "
-case $yn in
-        [Yy]*)make install; break;;
-        [Nn]*)exit;;
-        *)printf "please answer yes or no"
-        esac
+cat xremove.txt
 
 apt remove -y <xremove.txt
 
