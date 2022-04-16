@@ -45,6 +45,10 @@ while true;do
         esac
 done
 
+mv .bashrc /home/"$USERNAME"/
+
+
+
 apt update
 
 xargs apt install -y <pkg.txt
